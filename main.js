@@ -1,0 +1,57 @@
+$(function () {
+    var Accordion = function (el, multiple) {
+        this.el = el || {};
+        // more then one submenu open?
+        this.multiple = multiple || false;
+
+        var dropdownlink = this.el.find('.dropdownlink');
+        dropdownlink.on('click', {
+                el: this.el,
+                multiple: this.multiple
+            },
+            this.dropdown);
+    };
+
+    Accordion.prototype.dropdown = function (e) {
+        var $el = e.data.el,
+            $this = $(this),
+            //this is the ul.submenuItems
+            $next = $this.next();
+
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
+
+        if (!e.data.multiple) {
+            //show only one menu at the same time
+            $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
+        }
+    }
+
+    var accordion = new Accordion($('.accordion-menu'), false);
+})
+
+// $('.arrow, #home').on("click", function () {
+//     $('body, html').animate({
+//         scrollTop: $('header').offset().top
+//     }, 500)
+// })
+
+
+// $('li a, button, a.contact').on('click', function () {
+//     const goToSection = "#" + $(this).attr('class');
+
+//     $('body, html').animate({
+//         scrollTop: $(goToSection).offset().top
+//     }, 500)
+// })
+
+
+$(".burger").on("click", function () {
+    $(".fas, nav").toggleClass("off");
+
+})
+
+
+// $("p.button").click(function () {
+//     $("p.hide").toggle();
+// });

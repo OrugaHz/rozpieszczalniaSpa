@@ -1,0 +1,43 @@
+aside
+    position: fixed
+    top: 0
+    left: 0
+    width: 1080px
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: start
+    background-color: #335444e8
+    width: 100vw
+    height: 40px
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4)
+    text-decoration: none
+    z-index: 2
+    @media (min-width: 1200px)
+        background-color: #335444
+        justify-content: space-around
+
+    span
+        font-size: 14px
+        line-height: 40px
+        color: white
+        font-weight: bold
+        padding: 10px 10px
+        @media (min-width: 1200px)
+            font-size: 18px
+
+        a
+            text-decoration: none
+            color: white
+            @media (min-width: 1200px)
+                padding: 20px 20px
+
+    i.fa-facebook
+        text-decoration: none
+            // font-size: 18px
+        color: white
+        padding: 10px 10px
+        @media (min-width: 1200px)
+            &:hover
+                color: black

@@ -1,0 +1,251 @@
+main
+    .about
+        display: flex
+        flex-direction: column
+        padding: 20px 20px 50px 20px
+        background-color: rgb(241, 246, 238)
+        .h1about
+            margin-top: 40px
+        h1
+            align-self: center
+            padding: 30px 30px
+            padding-top: 10px
+            font-size: 30px
+            @media (min-width: 1200px)
+                padding: 30px 30px
+                font-size: 40px
+    .wrapper
+        display: flex
+        flex-direction: column-reverse
+        height: 100vh
+        max-width: 1080px
+        margin: 0 auto
+        @media (min-width: 768px )
+            flex-direction: row
+            height: 50vh
+
+        .img
+            height: 100%
+            width: 100%
+            background-image: url('/img/img_about.jpg')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+            border-radius: 10px
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+            @media (min-width: 768px )
+                height: 100%
+                width: 40%
+
+        .text
+            width: 100%
+            padding: 10px 50px
+            @media (min-width: 768px )
+                width: 60%
+            p
+                padding: 2px
+                text-align: justify
+                &:last-child
+                    font-style: italic
+                    text-align: right
+                    padding: 10px
+
+    .offer
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        max-width: 1080px
+        margin: 0 auto
+        padding: 20px 20px
+        h1
+            align-self: center
+            padding: 30px 30px
+            padding-top: 10px
+            font-size: 30px
+            @media (min-width: 1200px)
+                padding: 30px 30px
+                font-size: 40px
+
+        .offer_specific
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100%
+            width: 100%
+            background-color: rgb(241, 246, 238)
+            border-radius: 10px
+            padding: 10px 10px 60px 10px
+            // margin-top: 20px
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+            margin: 10px 0
+
+            @media (min-width: 768px )
+                padding: 50px 50px 60px 50px
+                width: 750px
+            .icon
+                color: #335444
+                // padding-top: 50px
+                // @media (min-width: 768px)
+                //     padding-top: 90px 0
+            h2
+                text-align: center
+                padding: 20px 0
+                font-size: 20px
+
+            .additional
+                padding: 0 20px 20px 20px
+                text-align: justify
+                color: #335444
+
+            .offer_wrapper
+                display: flex
+                flex-direction: column
+                div
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+
+                    @media (min-width: 768px )
+                        width: 600px
+                        flex-direction: row
+                        align-items: flex-start
+                        justify-content: space-between
+
+                    p.offer_name
+                        text-align: center
+                        font-weight: bold
+                        padding: 5px 0
+                        @media (min-width: 768px)
+                            text-align: left
+                    p.price
+                        border-bottom: 1px solid black
+                        margin-bottom: 12px
+                        @media (min-width: 768px)
+                            // margin-left: 30px
+                            width: 200px
+                            border-bottom: none
+                            text-align: right
+                            align-self: flex-end
+
+    .offer_specific:nth-child(odd)
+        background-color: white
+
+    .gallery
+        display: flex
+        flex-direction: column
+        padding: 20px 20px 50px 20px
+        background-color: rgb(241, 246, 238)
+        h1
+            align-self: center
+            padding: 30px 30px
+            padding-top: 10px
+            font-size: 30px
+            @media (min-width: 1200px)
+                padding: 30px 30px
+                font-size: 40px
+        .images
+            margin: 0 auto
+            display: flex
+            direction: column
+            align-content: center
+            justify-content: space-around
+            width: 100%
+            height: 100%
+            flex-wrap: wrap
+            @media (min-width: 768px )
+                direction: row
+                max-height: 100vh
+                max-width: 1280px
+            img
+
+                max-width: 400px
+                height: 300px
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+                border-radius: 4px
+
+    .contact
+        display: flex
+        flex-direction: column
+        padding: 20px 20px
+        background-color: #335444
+        color: white
+        h1
+            align-self: center
+            padding: 30px 30px
+            padding-top: 10px
+            font-size: 30px
+            @media (min-width: 1200px)
+                padding: 30px 30px
+                font-size: 40px
+        .wrapper
+            display: flex
+            flex-direction: column
+            align-content: center
+            justify-content: center
+            height: 100%
+            max-width: 1080px
+            margin: 0 auto
+            @media (min-width: 768px)
+                flex-direction: row
+                height: 100%
+                max-width: 1080px
+            .info
+                padding: 20px 20px
+                width: 100%
+                height: 100%
+                @media (min-width: 768px)
+                    width: 50%
+                .facebook
+                    width: 100%
+                    text-align: center
+                    a
+                        display: inline-block
+                        text-align: center
+                        margin: 10px
+                        height: 50px
+                        width: 50px
+                        background-color: #233a2f
+                        border-radius: 50%
+                        transition: .2s linear
+                        &:hover
+                            background-color: #4d4b4b
+
+                        i
+                            font-size: 20px
+                            height: 50px
+                            line-height: 50px
+                            color: white
+
+            .logo-inverted
+                display: none
+                background-color: #233a2f
+                width: 300px
+                height: 300px
+                border-radius: 50%
+                @media (min-width: 768px)
+                    display: flex
+                    // align-self: center
+
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+                    filter: invert(100%)
+    .map
+        height: 50vh
+        width: 100%
+
+footer
+    background-color: #446252
+    color: white
+    text-align: center
+    padding: 10px 10px
+
+[id]
+    scroll-margin-top: 45px
+    @media (min-width: 768px)
+        scroll-margin-top: 110px
