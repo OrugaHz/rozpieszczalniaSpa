@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Olga Hinz">
+    <meta name="author" content="OHz">
     <meta name="description" content="Rozpieszczalnia - gabinet kosmetyczny - Natalia Andrzejewska, Jankowice." />
     <title>Rozpieszczalnia Spa - gabinet kosmetyczny i fizjoterapii - Jankowice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Manrope:wght@200;400&family=Playfair+Display:ital@0;1&family=Tangerine:wght@400;700&family=The+Nautigal:wght@400;700&family=WindSong:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playfair+Display&family=Solitreo&display=swap"
         rel="stylesheet">
 
     <link href="dist/css/lightbox.min.css" rel="stylesheet">
@@ -26,18 +30,21 @@
         </div>
     </aside>
 
-    <header></header>
+    <header>
+        <div class="shadow"></div>
+        <img src="img/logo.png" alt="logo">
+    </header>
 
     <!-- navigation -->
     <nav class="off">
         <ul class="accordion-menu">
             <li>
-                <div class="dropdownlink"><a href="#about" class="about">O mnie</a></div>
+                <div class="dropdownlink">
+                    <a href="#about" class="about">O mnie</a></div>
                 </div>
             </li>
             <li>
-                <div class="dropdownlink">Oferta
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <div class="dropdownlink">Oferta <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 </div>
                 <ul class="submenuItems">
                     <li><a class="offer1" href="#offer1">STREFA SPA DLA PAŃ I PANÓW</a></li>
@@ -51,7 +58,7 @@
                 </ul>
             </li>
             <li>
-                <div class="dropdownlink"><a href="#gallery" class="gallery">Gabinet</a></div>
+                <div class="dropdownlink"><a href="#gallery" class="gallery">Galeria</a></div>
             </li>
             <li>
                 <div class="dropdownlink"><a href="#contact" class="contact">Kontakt</a></div>
@@ -65,13 +72,8 @@
     <!-- navigation - end -->
 
     <main>
-        <!-- <section class="motto">
-            <p>Zdrowie i piękno,</p>
-            <p>w jednym miejscu!</p>
-            <p>Zapraszam!</p>
-        </section> -->
         <section class="about" id="about">
-            <h1 class="h1about">O MNIE</h1>
+            <h1>O MNIE</h1>
             <div class="wrapper">
                 <div class="img"></div>
                 <div class="text">
@@ -368,12 +370,25 @@
         </section>
 
         <section class="gallery" id="gallery">
-            <h1>GABINET</h1>
+            <h1>GALERIA</h1>
             <div class="images">
-                <a data-lightbox="www" href="img/gabinet/gabinet_1.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/gabinet_1.jpg" alt="gabinet"></a>
-                <a data-lightbox="www" href="img/gabinet/gabinet_2.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/gabinet_2.jpg" alt="gabinet"></a>
-                <a data-lightbox="www" href="img/gabinet/gabinet_3.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/gabinet_3.jpg" alt="gabinet"></a>
+                <a data-lightbox="www" href="img/gabinet/img1.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/img1.jpg" alt="gabinet"></a>
+                <a data-lightbox="www" href="img/gabinet/img2.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/img2.jpg" alt="gabinet"></a>
+                <a data-lightbox="www" href="img/gabinet/img3.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/img3.jpg" alt="gabinet"></a>
+                <a data-lightbox="www" href="img/gabinet/img4.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/img4.jpg" alt="gabinet"></a>
+                <a data-lightbox="www" href="img/gabinet/img5.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/img5.jpg" alt="gabinet"></a>
+                <a data-lightbox="www" href="img/gabinet/img6.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/img6.jpg" alt="gabinet"></a>
+                <a data-lightbox="www" href="img/gabinet/img7.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/img7.jpg" alt="gabinet"></a>
+                <a data-lightbox="www" href="img/gabinet/img8.jpg" data-title="Gabinet Rozpieszczalnia Spa"><img class="min" src="img/gabinet/img8.jpg" alt="gabinet"></a>
             </div>
+        </section>
+
+        <section class="motto">
+            <div class="shadow"></div>
+            <p>zdrowie, piękno, relaks - w jednym miejscu</p>
+            <!-- <img src="img/carousel/img1.jpg" alt="image">
+            <img src="img/carousel/img2.jpg" alt="image">
+            <img src="img/carousel/img3.jpg" alt="image"> -->
         </section>
 
         <section class="contact" id="contact">
@@ -394,7 +409,7 @@
                     <p>rozpieszczalnia@kontakt.pl</p>
                     <br>
                     <div class="facebook">
-                        <a href="https://www.facebook.com/..." target="_blank"><i class="fa fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/people/Rozpieszczalnia-Spa/100087193056314/?hc_ref=ARTAzeTDpwDxXx-csH0jk8U0EUtqdWHuKbpXAJbONZd65DDKTvsaTHUyiRAyMrvKuOY&fref=nf&__xts__[0]=68.ARAXf7NCbnURiTwUzKNQyWnis-WM9M-mDiZUrBwd_FdeOf2tUMJ7yQ8tENArAkmcbIHbpg1yWP-ITy1uUDFiN_7dLFAI5Ennr6bTZaTcuLUSXB7-DrnA5jBOsMCUZT-PF1u8Fso6Z0GqbdJA0zCmWS0vntPmwrWam0Ozc_1gAgsNhIYmOzMpV-M3iawneHmrhp_rnxGNIvGXSCfn8NpA0-esqRbVE5_9fznXm8vu9LOXhVjkwigLECM2v1pQyV57VZDyieOHvgGlg2NymRpXVmbXBl206YncX9JaN5gWp2mRbt2hrM4" target="_blank"><i class="fa fa-facebook-f"></i></a>
                     </div>
                 </div>
                 <div class="logo-inverted">
@@ -414,8 +429,7 @@
 
     </main>
     <footer>
-        <p>&copy;2023 Rozpieszczalnia Spa - Natalia Andrzejewska | Wszelkie prawa zastrzeżone | Projekt strony i
-            wykonanie: OHz</p>
+        <p>&copy;2023 Rozpieszczalnia Spa - Natalia Andrzejewska | Wszelkie prawa zastrzeżone | Strona: OHz</p>
     </footer>
 
     <script src="src/jquery-3.6.0.min.js"></script>

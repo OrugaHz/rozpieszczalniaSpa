@@ -2,93 +2,72 @@ nav
     position: fixed
     top: 40px
     left: 0
-    // height: 100%
-    // width: 100vw
-    // background-color: white
+    height: auto
+    width: 100vw
+    background-color: $color-nav
     transition: .3s ease-out
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4)
+    z-index: 2
 
-ul
-    list-style: none
-    @media (min-width: 1200px)
-        display: flex
-        flex-direction: row
-        align-items: center
-        justify-content: center
+    ul
+        list-style: none
 
-a
-    text-decoration: none
+    a
+        text-decoration: none
 
-.accordion-menu
-    width: 100vw
-    // max-width: 350px
-    // margin: 60px auto 20px
-    background: #fff
-    // border-radius: 4px
-
-    // & li.open .dropdownlink
-    //     color: #CDDC39
-
-    // .fa-chevron-down
-    //     transform: rotate(180deg)
-    @media (min-width: 1200px)
-        // max-width: 1080px
-        margin: 0 auto
-
-.accordion-menu li:last-child .dropdownlink
-    border-bottom: 0
-
-.dropdownlink
-    cursor: pointer
-    display: block
-    padding: 15px 15px 15px 45px
-    font-size: 16px
-    // border-bottom: 1px solid #ccc
-    color: #212121
-    position: relative
-    transition: all 0.4s ease-out
-    text-transform: uppercase
-    @media (min-width: 1200px)
-        display: flex
-        flex-direction: row
-        align-items: left
-        justify-content: left
-
-    .fa-chevron-down
-        right: 12px
-        left: auto
-
-.dropdownlink a
-    color: #212121
-
-.submenuItems
-    display: none
-    background: #ecf3ec
-    @media (min-width: 1200px)
-        position: absolute
-        display: flex
-        flex-direction: column
-        align-items: flex-start
-        display: none
-        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4)
-
-    li
-        // border-bottom: 1px solid #B6B6B6
+    .accordion-menu
+        width: 100vw
         @media (min-width: 1200px)
-            width: 100%
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            margin: 0 auto
 
-    & a
+    .dropdownlink
+        overflow: hidden
+        cursor: pointer
         display: block
-        color: #727272
-        padding: 10px 20px
-        // padding: 10px 10px 10px 40px
+        padding: 15px 15px 15px 45px
+        font-size: 16px
+        color: #212121
+        position: relative
         transition: all 0.4s ease-out
-        text-transform: lowercase
-
+        text-transform: uppercase
+        font-weight: bold
         @media (min-width: 1200px)
-        &:hover
-            background-color: #d7f0d7
-            color: #335444
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+
+        .fa-chevron-down
+            align-self: center
+
+    .dropdownlink a
+        color: #212121
+
+    .submenuItems
+        display: none
+        background: $color-light1
+        @media (min-width: 1200px)
+            position: absolute
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            display: none
+            box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4)
+
+        & a
+            display: block
+            color: $color-darkest
+            padding: 10px 20px
+            transition: all 0.4s ease-out
+            text-transform: lowercase
+            @media (min-width: 1200px)
+            &:hover
+                background-color: $color-darkest
+                color: $color-light1
 
 .burger
     color: white
