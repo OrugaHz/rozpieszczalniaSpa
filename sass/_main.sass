@@ -8,18 +8,20 @@ main
         align-items: center
         justify-content: center
         min-height: 50vh
-        padding: 20px 20px 50px 20px
+        padding: 20px 20px
         background-color: $color-light1
+        @media (min-width: 768px)
+            padding-bottom: 50px
 
         h1
             @include h1Style
     .wrapper
         display: flex
-        flex-direction: column-reverse
+        flex-direction: column
         height: 100vh
         max-width: 1080px
         margin: 0 auto
-        @media (min-width: 768px )
+        @media (min-width: 768px)
             flex-direction: row
             height: 50vh
 
@@ -32,10 +34,11 @@ main
             background-size: cover
             border-radius: 10px
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-
+            margin-bottom: 20px
             @media (min-width: 768px)
                 height: 100%
                 width: 40%
+                margin-bottom: 0
 
         .text
             width: 100%
