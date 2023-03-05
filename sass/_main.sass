@@ -1,13 +1,11 @@
 main
     background-color: $color-medium
-    overflow: hidden !important
     .about
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
         min-height: 50vh
-        max-width: 1080px
         padding: 20px 20px
         background-color: $color-light1
         @media (min-width: 768px)
@@ -146,7 +144,6 @@ main
         display: flex
         flex-direction: column
         height: 100%
-        max-width: 1080px
         padding: 20px 20px 50px 20px
         background-color: $color-light1
         h1
@@ -220,7 +217,7 @@ main
         display: flex
         flex-direction: column
         min-height: 50vh
-        max-width: 1080px
+        width: 100%
         padding: 20px 20px
         background-color: $color-dark
         color: white
@@ -238,12 +235,11 @@ main
             font-size: 18px
             @media (min-width: 768px)
                 flex-direction: row
-                max-width: 1080px
-                .info
-                    padding: 20px 20px
-                    width: 100%
-                    height: 100%
-
+                // max-width: 1900px
+            .info
+                padding: 20px 20px
+                width: 100%
+                height: 100%
                 @media (min-width: 768px)
                     width: 35%
                 .facebook
@@ -295,10 +291,10 @@ main
         height: 50vh
         width: 100%
 
-.wrapper.about_m, .wrapper.gallery_m, .wrapper.contact_m,
-    transform: translateY(10px)
-    transition: .5s linear
-    opacity: 0
-.wrapper.about_m.active,.wrapper.gallery_m.active,.wrapper.contact_m.active,
-    transform: translateY(0)
-    opacity: 1
+// .wrapper.about_m, .wrapper.gallery_m, .wrapper.contact_m,
+//     // transform: translateY(10px)
+//     transition: .5s linear
+//     opacity: 0
+// .wrapper.about_m.active,.wrapper.gallery_m.active,.wrapper.contact_m.active,
+//     // transform: translateY(0)
+//     opacity: 1

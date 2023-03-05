@@ -35,40 +35,40 @@ $(".burger").on("click", function () {
 
 })
 
-$(document).on('scroll', function () {
+// $(document).on('scroll', function () {
 
-    const windowHeight = $(window).height()
-    const scrollValue = $(this).scrollTop();
+//     const windowHeight = $(window).height()
+//     const scrollValue = $(this).scrollTop();
 
 
-    const $wrapper1 = $('.about_m');
-    const wrapper1FromTop = $wrapper1.offset().top;
+//     const $wrapper1 = $('.about_m');
+//     const wrapper1FromTop = $wrapper1.offset().top;
 
-    if (scrollValue > wrapper1FromTop - windowHeight) {
-        $wrapper1.addClass('active')
-    }
-    if (scrollValue < 100) {
-        $(".about_m").removeClass('active')
-    }
+//     if (scrollValue > wrapper1FromTop - windowHeight) {
+//         $wrapper1.addClass('active')
+//     }
+//     if (scrollValue < 100) {
+//         $(".about_m").removeClass('active')
+//     }
 
-    const $wrapper2 = $('.gallery_m');
-    const wrapper2FromTop = $wrapper2.offset().top;
+//     const $wrapper2 = $('.gallery_m');
+//     const wrapper2FromTop = $wrapper2.offset().top;
 
-    if (scrollValue > wrapper2FromTop - windowHeight) {
-        $wrapper2.addClass('active')
-    }
-    if (scrollValue < 100) {
-        $(".gallery_m").removeClass('active')
-    }
+//     if (scrollValue > wrapper2FromTop - windowHeight) {
+//         $wrapper2.addClass('active')
+//     }
+//     if (scrollValue < 100) {
+//         $(".gallery_m").removeClass('active')
+//     }
 
-    const $wrapper3 = $('.contact_m');
-    const wrapper3FromTop = $wrapper3.offset().top;
+//     const $wrapper3 = $('.contact_m');
+//     const wrapper3FromTop = $wrapper3.offset().top;
 
-    if (scrollValue > wrapper3FromTop - windowHeight) {
-        $wrapper3.addClass('active')
-    }
-    if (scrollValue < 100) {
-        $(".contact_m").removeClass('active')
-    }
+//     if (scrollValue > wrapper3FromTop - windowHeight) {
+//         $wrapper3.addClass('active')
+//     }
+//     if (scrollValue < 100) {
+//         $(".contact_m").removeClass('active')
+//     }
 
-})
+// })
