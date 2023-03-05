@@ -30,28 +30,45 @@ $(function () {
     var accordion = new Accordion($('.accordion-menu'), false);
 })
 
-// $('.arrow, #home').on("click", function () {
-//     $('body, html').animate({
-//         scrollTop: $('header').offset().top
-//     }, 500)
-// })
-
-
-// $('li a, button, a.contact').on('click', function () {
-//     const goToSection = "#" + $(this).attr('class');
-
-//     $('body, html').animate({
-//         scrollTop: $(goToSection).offset().top
-//     }, 500)
-// })
-
-
 $(".burger").on("click", function () {
     $(".fas, nav").toggleClass("off");
 
 })
 
+$(document).on('scroll', function () {
 
-// $("p.button").click(function () {
-//     $("p.hide").toggle();
-// });
+    const windowHeight = $(window).height()
+    const scrollValue = $(this).scrollTop();
+
+
+    const $wrapper1 = $('.about_m');
+    const wrapper1FromTop = $wrapper1.offset().top;
+
+    if (scrollValue > wrapper1FromTop - windowHeight) {
+        $wrapper1.addClass('active')
+    }
+    if (scrollValue < 100) {
+        $(".about_m").removeClass('active')
+    }
+
+    const $wrapper2 = $('.gallery_m');
+    const wrapper2FromTop = $wrapper2.offset().top;
+
+    if (scrollValue > wrapper2FromTop - windowHeight) {
+        $wrapper2.addClass('active')
+    }
+    if (scrollValue < 100) {
+        $(".gallery_m").removeClass('active')
+    }
+
+    const $wrapper3 = $('.contact_m');
+    const wrapper3FromTop = $wrapper3.offset().top;
+
+    if (scrollValue > wrapper3FromTop - windowHeight) {
+        $wrapper3.addClass('active')
+    }
+    if (scrollValue < 100) {
+        $(".contact_m").removeClass('active')
+    }
+
+})
